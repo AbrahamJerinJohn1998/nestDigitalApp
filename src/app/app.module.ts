@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeRegComponent } from './employee-reg/employee-reg.component';
 import { NavbarHomeComponent } from './navbar-home/navbar-home.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -36,7 +37,8 @@ const myRoute:Routes=[
     AdminLoginComponent,
     EmployeeLoginComponent,
     EmployeeRegComponent,
-    NavbarHomeComponent
+    NavbarHomeComponent,
+    AddCourseComponent
   ],
   imports: [
     BrowserModule,
