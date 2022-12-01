@@ -10,6 +10,8 @@ export class AddFriendsComponent {
   name=""
   friendName=""
   friendNickName=""
+ 
+  
   DescribeYourFriend=""
   constructor(private api:ApiService){}
   readValues=()=>

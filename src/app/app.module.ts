@@ -17,6 +17,9 @@ import { NavbarEmployeeComponent } from './navbar-employee/navbar-employee.compo
 import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { ViewCoursesComponent } from './view-courses/view-courses.component';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -49,6 +52,18 @@ const myRoute:Routes=[
   {
     path:"viewcourses",
     component:ViewCoursesComponent
+  },
+  {
+    path:"gallery",
+    component:GalleryComponent
+  },
+  {
+    path:"aboutus",
+    component:AboutUsComponent
+  },
+  {
+    path:"contactus",
+    component:ContactUsComponent
   }
 ]
 @NgModule({
@@ -64,7 +79,10 @@ const myRoute:Routes=[
     NavbarEmployeeComponent,
     ViewFriendsComponent,
     ViewCoursesComponent,
-    NavbarAdminComponent
+    NavbarAdminComponent,
+    GalleryComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
