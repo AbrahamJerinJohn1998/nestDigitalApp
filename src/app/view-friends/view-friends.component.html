@@ -1,10 +1,45 @@
 <app-navbar-admin></app-navbar-admin>
+<style>
+    .bgm{background-image:url('data:image/jpeg;base64,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') ;}
+  </style>
+  <div class="bgm" style="height:700px">
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h1>View Friends</h1>
+                   </div>
+                   <ng-container *ngIf="loading; then loadingScreen; else dataScreen"></ng-container>
+                  <ng-template #loadingScreen>
+                    <div class="spinner-grow text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-secondary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-warning" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-dark" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div></ng-template>
+                  <ng-template #dataScreen>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6" *ngFor="let i of data">
                     <div class="card" style="width: 18rem;">
+                        <img src="https://toppng.com/uploads/preview/app-icon-set-login-icon-comments-avatar-icon-11553436380yill0nchdm.png"  class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">{{i.name}}</h5>
                           <p class="card-text">{{i.friendName}}</p>
@@ -13,7 +48,9 @@
                         </div>
                       </div>
                 </div>
+                </ng-template>
             </div>
         </div>
     </div>
 </div>
+  </div>
